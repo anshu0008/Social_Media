@@ -7,8 +7,8 @@ export default defineConfig({
   name: 'default',
   title: 'socialMedia',
 
-  projectId: process.env.SANITY_PROJECTID,
-  dataset: process.env.SANITY_DATASET,
+  projectId: "9grp0h9l",
+  dataset: "production",
 
   plugins: [deskTool(), visionTool()],
 
