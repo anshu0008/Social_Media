@@ -1,11 +1,13 @@
 
-# Fullstack Social Media Application with Google OAuth Authentication and MongoDB
+
 
 
 #website Link :https://socialwebmedia.netlify.app/login
 
 
-Welcome to the Fullstack Social Media Application! This project is a powerful and customizable social media platform that allows users to connect, share posts, and interact with each other in a seamless and engaging environment. The application is built using the MERN stack (MongoDB, Express.js, React, Node.js) and integrates Google OAuth for secure and convenient user authentication.
+# Fullstack Social Media Application with Google OAuth Authentication and Sanity Backend
+
+Welcome to the Fullstack Social Media Application! This project is a versatile and feature-rich social media platform that integrates Google OAuth for secure user authentication and utilizes Sanity Cloud as the backend for content management. The application offers a seamless and engaging environment for users to connect, share posts, and interact with each other.
 
 ## Table of Contents
 
@@ -13,8 +15,9 @@ Welcome to the Fullstack Social Media Application! This project is a powerful an
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
+- [Configuration](#configuration)
 - [Usage](#usage)
-- [API Documentation](#api-documentation)
+- [Backend with Sanity Cloud](#backend-with-sanity-cloud)
 - [Contributing](#contributing)
 
 
@@ -24,19 +27,20 @@ Welcome to the Fullstack Social Media Application! This project is a powerful an
 - Create, edit, and delete posts with rich text and media content.
 - Like, comment, and engage with other users' posts.
 - User profiles with profile pictures and bio information.
-- Secure and scalable RESTful API built with Express.js and MongoDB.
-- Responsive and dynamic frontend built with React and Tailwindcss.
+- Secure and scalable backend powered by Sanity Cloud.
+- Responsive and dynamic frontend for a seamless user experience.
 - Modular and well-organized codebase for easy customization.
 
 ## Getting Started
 
 ### Prerequisites
 
-Before you begin, make sure you have the following software installed:
+Before you begin, make sure you have the following prerequisites:
 
 - Node.js (>=14.x)
 - npm (Node Package Manager)
-- MongoDB
+- Sanity Account for backend setup
+- Google OAuth credentials
 
 ### Installation
 
@@ -44,39 +48,48 @@ Before you begin, make sure you have the following software installed:
 
 ```bash
 git clone https://github.com/anshu0008/Social_Media.git
+
 ```
 
-2. Install server dependencies:
+2. Install frontend dependencies:
 
 ```bash
 cd backend
 npm install
 ```
 
-3. Configure your Google OAuth credentials:
-   - Go to the [Google Developers Console](https://console.developers.google.com/).
-   - Create a new project and enable the Google+ API.
-   - Configure the OAuth consent screen and set authorized redirect URIs.
-   - Create OAuth 2.0 credentials and copy the Client ID and Client Secret.
-
-4. Install client dependencies:
+3. Install backend dependencies:
 
 ```bash
 cd frontend
 npm install
 ```
 
+## Configuration
+
+Before running the application, you need to configure a few settings:
+
+- Frontend Configuration:
+  - Update the Google OAuth client ID in `frontend/src/config.js`.
+
+- Backend Configuration:
+  - Create a `.env` file in the `backend` directory and add your Sanity API token and project ID:
+
+  ```plaintext
+  SANITY_PROJECT_ID=your-sanity-project-id
+  SANITY_TOKEN=your-sanity-api-token
+  ```
 
 ## Usage
 
-1. Start the server:
+1. Start the frontend:
 
 ```bash
 cd backend
 npm start
 ```
 
-2. Start the client:
+2. Start the backend:
 
 ```bash
 cd frontend
@@ -85,9 +98,9 @@ npm start
 
 3. Access the application by visiting `http://localhost:3000` in your web browser.
 
-## API Documentation
+## Backend with Sanity Cloud
 
-For detailed information on the RESTful API endpoints, refer to the [API Documentation](api-documentation.md) file.
+Sanity Cloud powers the backend of this application, providing a content management system for posts, user profiles, and more. To access and manage your content, log in to your Sanity Studio by visiting `https://your-sanity-project-id.sanity.studio`.
 
 ## Contributing
 
@@ -95,7 +108,6 @@ We welcome contributions from the community! If you find any issues or want to a
 
 
 
----
 
 Thank you for choosing the Fullstack Social Media Application. We hope this platform provides a valuable social experience for your users! If you have any questions or need assistance, please contact us at anshuagrawal1901302@gmail.com.
 
