@@ -25,9 +25,8 @@ Welcome to the Fullstack Social Media Application! This project is a powerful an
 - Create, edit, and delete posts with rich text and media content.
 - Like, comment, and engage with other users' posts.
 - User profiles with profile pictures and bio information.
-- Real-time updates using WebSockets for instant notifications.
 - Secure and scalable RESTful API built with Express.js and MongoDB.
-- Responsive and dynamic frontend built with React and Redux.
+- Responsive and dynamic frontend built with React and Tailwindcss.
 - Modular and well-organized codebase for easy customization.
 
 ## Getting Started
