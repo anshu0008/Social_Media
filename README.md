@@ -70,7 +70,7 @@ npm install
 Before running the application, you need to configure a few settings:
 
 - Frontend Configuration:
-  - Update the Google OAuth client ID in `frontend/src/config.js`.
+  - Update the Google OAuth client ID in `frontend/src/.env`.
 
 - Backend Configuration:
   - Create a `.env` file in the `backend` directory and add your Sanity API token and project ID:
