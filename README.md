@@ -1,8 +1,9 @@
-# Social_Media
+
+# Fullstack Social Media Application with Google OAuth Authentication and MongoDB
+
 
 #website Link :https://socialwebmedia.netlify.app/login
 
-# Fullstack Social Media Application with Google OAuth Authentication and MongoDB
 
 Welcome to the Fullstack Social Media Application! This project is a powerful and customizable social media platform that allows users to connect, share posts, and interact with each other in a seamless and engaging environment. The application is built using the MERN stack (MongoDB, Express.js, React, Node.js) and integrates Google OAuth for secure and convenient user authentication.
 
